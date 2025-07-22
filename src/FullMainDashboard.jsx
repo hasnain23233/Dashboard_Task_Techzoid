@@ -7,11 +7,11 @@ const FullMainDashboard = () => {
     return (
         <>
             <Navbar />
-            <div className='flex h-screen gap-4 bg-gray-50 items-center border-2'>
+            <div className='flex h-screen gap-4 overflow-hidden bg-gray-50  border-2'>
                 <div className='w-2/12 border h-full'>
                     <SideNabar />
                 </div>
-                <div className='w-10/12'>
+                <div className='w-10/12 overflow-auto'>
                     <RoutingFiles />
                 </div>
             </div>
