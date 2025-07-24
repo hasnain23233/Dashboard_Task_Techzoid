@@ -1,10 +1,17 @@
 import React from 'react'
 import Graph from './Files/Graph'
+import {
+    Routes,
+    Route,
+    Link
+} from "react-router-dom";
 
 const RoutingFiles = () => {
     return (
         <div>
-            <Graph />
+            <Routes>
+                <Route path='/dashboard' element={<Graph />} />
+            </Routes>
         </div>
     )
 }

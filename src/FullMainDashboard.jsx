@@ -3,6 +3,7 @@ import Navbar from './compnents/navbar'
 import SideNabar from './compnents/sideNabar'
 import RoutingFiles from './RoutingFiles'
 
+
 const FullMainDashboard = () => {
     return (
         <>

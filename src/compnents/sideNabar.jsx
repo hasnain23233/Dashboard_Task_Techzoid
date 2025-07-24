@@ -1,6 +1,9 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChartLine, faIdCardAlt, faFileAlt, faBell, faCog, faUser, faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
+import {
+    Link
+} from "react-router-dom";
 
 const sideNabar = () => {
     return (
@@ -9,7 +12,7 @@ const sideNabar = () => {
                 <nav className='w-full flex flex-col justify-between h-screen px-3  items-center'>
                     <ul className='space-y-2 w-full mt-20'>
                         <li className='text-lg w-full p-3 hover:text-white rounded-md cursor-pointer hover:bg-orange-400'>
-                            <a href="#" className='flex gap-3 items-center'> <FontAwesomeIcon icon={faChartLine} /> Dashboard</a>
+                            <Link to="/dashboard" className='flex gap-3 items-center'> <FontAwesomeIcon icon={faChartLine} /> Dashboard</Link>
                         </li>
                         <li className='text-lg w-full p-3 hover:text-white rounded-md cursor-pointer hover:bg-orange-400'>
                             <a href="#" className='flex gap-3 items-center'> <FontAwesomeIcon icon={faIdCardAlt} /> Manage Licenses</a>
@@ -29,7 +32,7 @@ const sideNabar = () => {
                     </ul>
                     <ul className='w-full'>
                         <li className='text-lg  p-3 hover:text-orange-700 w-full border-t cursor-pointer text-orange-400'>
-                            <a href="#" className='flex gap-3 items-center'><FontAwesomeIcon icon={faSignOutAlt} /> Logout</a>
+                            <Link to="/" className='flex gap-3 items-center'><FontAwesomeIcon icon={faSignOutAlt} /> Logout</Link>
                         </li>
                     </ul>
                 </nav>
