@@ -28,10 +28,6 @@ const RenewedDomainsChart = () => {
             setActiveKey('all');
         } else {
             setActiveKey(clickedKey);
-            const filtered = data.map(d => ({
-                date: d.date,
-                [clickedKey]: d[clickedKey]
-            }));
         }
     };
 

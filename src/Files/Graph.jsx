@@ -1,8 +1,11 @@
 import React from 'react'
-import Cards from './cards'
-import RenewedDomainsChart from './RenewedDomainsChart '
-import UpcomingExpires from './UpcomingExpires'
-import MapWithMarkers from './MapWithMarket'
+import Cards from './Dashbords/cards'
+import RenewedDomainsChart from './Dashbords/RenewedDomainsChart '
+import UpcomingExpires from './Dashbords/UpcomingExpires'
+import MapWithMarkers from './Dashbords/MapWithMarket'
+import FirstTable from './Dashbords/FirstTable'
+import UpcomingExpiries from './Dashbords/UpcomingExpiries'
+import RenewedCertificates from './Dashbords/RenewedCertificates'
 
 const Graph = () => {
     return (
@@ -16,6 +19,15 @@ const Graph = () => {
                 <div className='w-6/12 space-y-3 mt-5'>
                     <MapWithMarkers />
                 </div>
+            </div>
+            <div className='mt-4 h-[450px] overflow-auto rounded-xl'>
+                <FirstTable />
+            </div>
+            <div className='mt-4 h-[450px] overflow-auto rounded-xl'>
+                <RenewedCertificates />
+            </div>
+            <div className='mt-4 h-[450px] overflow-auto rounded-xl'>
+                <UpcomingExpiries />
             </div>
         </div>
     )
