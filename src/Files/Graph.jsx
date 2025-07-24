@@ -9,7 +9,7 @@ import RenewedCertificates from './Dashbords/RenewedCertificates'
 
 const Graph = () => {
     return (
-        <div className='px-2'>
+        <div className='px-2 font-roboto'>
             <Cards />
             <div className='flex gap-3'>
                 <div className='w-6/12 space-y-3 mt-5'>
