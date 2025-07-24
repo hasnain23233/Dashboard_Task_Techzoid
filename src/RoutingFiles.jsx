@@ -5,6 +5,7 @@ import {
     Route,
 } from "react-router-dom";
 import ManageLicenses from './Files/ManageLicenses';
+import Subscriptions from './Files/Subscriptions';
 
 const RoutingFiles = () => {
     return (
@@ -12,6 +13,7 @@ const RoutingFiles = () => {
             <Routes>
                 <Route path='/dashboard' element={<Graph />} />
                 <Route path='/manage-licenses' element={<ManageLicenses />} />
+                <Route path='/subscriptions' element={<Subscriptions />} />
             </Routes>
         </div>
     )
