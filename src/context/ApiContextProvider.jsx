@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CreateContextAPI from './createContextAPI';
 
 const ApiContextProvider = ({ children }) => {
-    const value = true;
+    const [logIn, setLoggin] = useState(true)
 
     return (
-        <CreateContextAPI.Provider value={value}>
+        <CreateContextAPI.Provider value={{ logIn, setLoggin }}>
             {children}
         </CreateContextAPI.Provider>
     );

@@ -1,16 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faChartLine, faIdCardAlt, faFileAlt,
     faBell, faCog, faUser, faSignOutAlt
 } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from "react-router-dom";
+import CreateContextAPI from '../context/createContextAPI';
 
 const sideNabar = () => {
+    const { setLoggin } = useContext(CreateContextAPI)
 
     const getNavLinkClass = (isActive) => {
         return `text-lg w-full p-3 rounded-md flex gap-3 items-center cursor-pointer ${isActive ? 'bg-orange-400 text-white' : 'hover:bg-orange-400 hover:text-white'}`;
     };
+    const handleContext = () => {
+        setLoggin(true)
+    }
 
     return (
         <div className='bg-white'>
@@ -50,9 +55,9 @@ const sideNabar = () => {
                     </ul>
                     <ul className='w-full'>
                         <li className='text-lg p-3 hover:text-orange-700 w-full border-t cursor-pointer text-orange-400'>
-                            <NavLink to="/" className='flex gap-3 items-center'>
+                            <button onClick={handleContext} className='flex gap-3 items-center'>
                                 <FontAwesomeIcon icon={faSignOutAlt} /> Logout
-                            </NavLink>
+                            </button>
                         </li>
                     </ul>
                 </nav>
