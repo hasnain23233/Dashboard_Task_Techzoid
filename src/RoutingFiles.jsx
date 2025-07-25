@@ -8,6 +8,7 @@ import ManageLicenses from './Files/ManageLicenses';
 import Subscriptions from './Files/Subscriptions';
 import Notifications from './Files/Notifications';
 import Settings from './Files/Settings';
+import Profile from './Files/Profile';
 
 const RoutingFiles = () => {
     return (
@@ -18,6 +19,7 @@ const RoutingFiles = () => {
                 <Route path='/subscriptions' element={<Subscriptions />} />
                 <Route path='/notifications' element={<Notifications />} />
                 <Route path='/settings' element={<Settings />} />
+                <Route path='/profile' element={<Profile />} />
             </Routes>
         </div>
     )
