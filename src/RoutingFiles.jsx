@@ -7,6 +7,7 @@ import {
 import ManageLicenses from './Files/ManageLicenses';
 import Subscriptions from './Files/Subscriptions';
 import Notifications from './Files/Notifications';
+import Settings from './Files/Settings';
 
 const RoutingFiles = () => {
     return (
@@ -16,6 +17,7 @@ const RoutingFiles = () => {
                 <Route path='/manage-licenses' element={<ManageLicenses />} />
                 <Route path='/subscriptions' element={<Subscriptions />} />
                 <Route path='/notifications' element={<Notifications />} />
+                <Route path='/settings' element={<Settings />} />
             </Routes>
         </div>
     )
