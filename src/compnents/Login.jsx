@@ -23,7 +23,7 @@ const Login = () => {
                 <img src={Logo} alt="" className='w-5/12' />
                 <h1 className='leading-loose text-4xl tracking-wider font-semibold'>Welcome Back</h1>
                 <p className='text-gray-600 tracking-wider'>Enter your details below</p>
-                <form className='w-full mt-4' onSubmit={handleOnSubmit}>
+                <form className='lg:w-11/12 w-full mt-4' onSubmit={handleOnSubmit}>
                     <div className='w-full'>
                         <div class="relative">
                             <input
