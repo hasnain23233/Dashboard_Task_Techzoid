@@ -31,7 +31,7 @@ const FirstTable = () => {
         setData(updated);
     };
     return (
-        <div className='bg-white p-4 rounded-md'>
+        <div className='bg-white p-4 rounded-md w-[1200px]'>
             <div className='flex justify-between items-center'>
                 <h1 className='text-2xl w-3/12 font-semibold text-gray-700'>Domains</h1>
                 <ul className='flex gap-4 w-9/12 justify-around items-center'>
