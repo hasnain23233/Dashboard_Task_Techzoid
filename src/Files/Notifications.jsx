@@ -22,8 +22,8 @@ const Notifications = () => {
                         <div className="bg-gray-100 p-2 h-12 w-12 flex items-center justify-center text-xl rounded-full">
                             <FontAwesomeIcon icon={faFileAlt} className="text-gray-500" />
                         </div>
-                        <div className="flex items-center  text-lg gap-3">
-                            <p className=" text-gray-800">{item.description}</p>
+                        <div className="flex items-center  sm:text-lg text-sm gap-3">
+                            <p className=" text-gray-800 ">{item.description}</p>
                             <span className="text-gray-400">{item.time}</span>
                         </div>
                     </div>
