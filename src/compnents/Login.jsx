@@ -16,14 +16,14 @@ const Login = () => {
     }
     return (
         <div className='h-screen font-roboto flex gap-10 items-center'>
-            <div className='h-full bg-orange-100 w-6/12'>
+            <div className='lg:block hidden h-full bg-orange-100 w-6/12'>
                 <img src={logginImg} alt="" className='w-full h-full' />
             </div>
-            <div className='w-6/12'>
+            <div className='lg:w-6/12 m-auto w-11/12'>
                 <img src={Logo} alt="" className='w-5/12' />
                 <h1 className='leading-loose text-4xl tracking-wider font-semibold'>Welcome Back</h1>
                 <p className='text-gray-600 tracking-wider'>Enter your details below</p>
-                <form className='w-11/12 mt-4' onSubmit={handleOnSubmit}>
+                <form className='w-full mt-4' onSubmit={handleOnSubmit}>
                     <div className='w-full'>
                         <div class="relative">
                             <input
