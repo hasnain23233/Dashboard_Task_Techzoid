@@ -1,8 +1,14 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFire, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 const ManageLicenses = () => {
+    const navigate = useNavigate()
+
+    const handleChangePage = () => {
+        navigate('/subscriptions')
+    }
     return (
         <div className='px-4  font-roboto'>
             <div className='mt-20  bg-white py-5 lg:px-7 px-4 rounded-xl shadow-lg'>
@@ -41,7 +47,7 @@ const ManageLicenses = () => {
                             <p>100+ integrations</p>
                         </p>
                         <br />
-                        <button className="w-full p-4  rounded-full bg-orange-500 text-white hover:bg-orange-700">Change Plan</button>
+                        <button onClick={handleChangePage} className="w-full p-4  rounded-full bg-orange-500 text-white hover:bg-orange-700">Change Plan</button>
                     </div>
                 </div>
             </div>
