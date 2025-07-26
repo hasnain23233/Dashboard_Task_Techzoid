@@ -9,9 +9,9 @@ const Settings = () => {
                     <h1 className='font-semibold text-xl tracking-wider'>Notifications</h1>
                     <p className='leading-loose text-gray-700'>Manage the notifications</p>
                 </div>
-                <div className=' px-4 py-5 flex gap-4'>
-                    <div className='ml-6 w-4/12'>
-                        <h1 className='font-semibold text-xl tracking-wider'>Notifications</h1>
+                <div className=' px-4 py-5 flex sm:flex-row flex-col gap-4'>
+                    <div className='lg:ml-6 sm:w-4/12'>
+                        <h1 className='font-semibold lg:text-xl sm:text-lg text-sm tracking-wider'>Notifications</h1>
                         <div className="space-y-6 mt-4">
                             <label className="flex items-center space-x-2 cursor-pointer">
                                 <input
@@ -40,8 +40,8 @@ const Settings = () => {
                             </label>
                         </div>
                     </div>
-                    <div className='ml-6'>
-                        <h1 className='font-semibold text-xl tracking-wider'>Messages</h1>
+                    <div className='lg:ml-6'>
+                        <h1 className='font-semibold lg:text-xl sm:text-lg text-sm tracking-wider'>Messages</h1>
                         <div className="space-y-6 mt-4">
                             <label className="flex items-center space-x-2 cursor-pointer">
                                 <input
@@ -78,7 +78,7 @@ const Settings = () => {
                     </div>
                 </div>
                 <div className='h-20 border-t px-4 flex items-center justify-end'>
-                    <button className='w-1/12 bg-orange-500 rounded-md text-white cursor-pointer hover:bg-orange-700 text-sm h-9'>Save</button>
+                    <button className='lg:w-1/12 sm:w-2/12 w-3/12 bg-orange-500 rounded-md text-white cursor-pointer hover:bg-orange-700 text-sm h-9'>Save</button>
                 </div>
             </div>
 
@@ -110,7 +110,7 @@ const Settings = () => {
                     </div>
                 </div>
                 <div className='h-20 border-t px-4 flex items-center justify-end'>
-                    <button className='w-1/12 bg-orange-500 rounded-md text-white cursor-pointer hover:bg-orange-700 text-sm h-9'>Update</button>
+                    <button className='lg:w-1/12 sm:w-2/12 w-4/12 bg-orange-500 rounded-md text-white cursor-pointer hover:bg-orange-700 text-sm h-9'>Update</button>
                 </div>
             </div>
 
