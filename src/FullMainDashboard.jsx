@@ -8,7 +8,7 @@ const FullMainDashboard = () => {
     return (
         <>
             <Navbar />
-            <div className='flex h-screen gap-4 overflow-hidden bg-gray-100  border-2'>
+            <div className='flex h-screen lg:gap-4 sm:gap-2 overflow-hidden bg-gray-100  border-2'>
                 <div className='lg:w-2/12 smw-1/12 border h-full'>
                     <SideNabar />
                 </div>

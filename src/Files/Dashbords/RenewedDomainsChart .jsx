@@ -34,16 +34,16 @@ const RenewedDomainsChart = () => {
     const renderColorfulLegendText = (value, entry) => {
         const isActive = activeKey === 'all' || activeKey === entry.dataKey;
         return (
-            <span style={{ color: isActive ? '#000' : '#ccc', }}>
+            <span style={{ color: isActive ? '#000' : '#ccc', fontSize: '12px' }}>
                 {value}
             </span>
         );
     };
 
     return (
-        <div className="p-4 rounded-xl shadow bg-white">
+        <div className="lg:p-4 p-2 rounded-xl shadow bg-white">
             <div className="flex justify-between  mb-4">
-                <h2 className="text-lg font-semibold">Renewed Domains</h2>
+                <h2 className="lg:text-lg text-sm font-semibold">Renewed Domains</h2>
                 <div className="flex items-end justify-end  flex-col s">
                     <span className="text-sm text-gray-500">Last 7 days</span>
 
@@ -54,9 +54,9 @@ const RenewedDomainsChart = () => {
             </div>
 
 
-            <ResponsiveContainer width="100%" height={190}>
-                <BarChart data={data} barGap={5}>
-                    <CartesianGrid strokeDasharray="3 3" vertical={false} />
+            <ResponsiveContainer width="90%" height={190} style={{ fontSize: '12px' }}>
+                <BarChart data={data} barGap={5} >
+                    <CartesianGrid strokeDasharray="2 2" vertical={false} />
                     <XAxis dataKey="date" />
                     <YAxis />
                     <Tooltip />

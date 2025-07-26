@@ -11,12 +11,12 @@ const Graph = () => {
     return (
         <div className='px-2 font-roboto'>
             <Cards />
-            <div className='flex gap-3'>
-                <div className='w-6/12 space-y-3 mt-5'>
+            <div className='flex lg:flex-row flex-col gap-3'>
+                <div className='lg:w-6/12 w-full space-y-3 mt-5'>
                     <RenewedDomainsChart />
                     <UpcomingExpires />
                 </div>
-                <div className='w-6/12 space-y-3 mt-5'>
+                <div className='lg:w-6/12 w-full space-y-3 mt-5'>
                     <MapWithMarkers />
                 </div>
             </div>
