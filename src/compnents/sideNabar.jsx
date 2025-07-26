@@ -24,39 +24,39 @@ const sideNabar = () => {
                     <ul className='space-y-2 w-full mt-20'>
                         <li>
                             <NavLink to="/dashboard" className={({ isActive }) => getNavLinkClass(isActive)}>
-                                <FontAwesomeIcon icon={faChartLine} /> Dashboard
+                                <FontAwesomeIcon icon={faChartLine} /> <span className='lg:block hidden'>Dashboard</span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/manage-licenses" className={({ isActive }) => getNavLinkClass(isActive)}>
-                                <FontAwesomeIcon icon={faIdCardAlt} /> Manage Licenses
+                                <FontAwesomeIcon icon={faIdCardAlt} /> <span className='lg:block hidden'>Manage Licenses</span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/subscriptions" className={({ isActive }) => getNavLinkClass(isActive)}>
-                                <FontAwesomeIcon icon={faFileAlt} /> Subscriptions
+                                <FontAwesomeIcon icon={faFileAlt} /> <span className='lg:block hidden'>Subscriptions</span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/notifications" className={({ isActive }) => getNavLinkClass(isActive)}>
-                                <FontAwesomeIcon icon={faBell} /> Notifications
+                                <FontAwesomeIcon icon={faBell} /> <span className='lg:block hidden'>Notifications</span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/settings" className={({ isActive }) => getNavLinkClass(isActive)}>
-                                <FontAwesomeIcon icon={faCog} /> Setting
+                                <FontAwesomeIcon icon={faCog} /> <span className='lg:block hidden'>Setting</span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/profile" className={({ isActive }) => getNavLinkClass(isActive)}>
-                                <FontAwesomeIcon icon={faUser} /> Profile
+                                <FontAwesomeIcon icon={faUser} /> <span className='lg:block hidden'>Profile</span>
                             </NavLink>
                         </li>
                     </ul>
                     <ul className='w-full'>
                         <li className='text-lg p-3 hover:text-orange-700 w-full border-t cursor-pointer text-orange-400'>
                             <button onClick={handleContext} className='flex gap-3 items-center'>
-                                <FontAwesomeIcon icon={faSignOutAlt} /> Logout
+                                <FontAwesomeIcon icon={faSignOutAlt} /> <span className='lg:block hidden'>Logout</span>
                             </button>
                         </li>
                     </ul>
