@@ -54,7 +54,7 @@ const RenewedDomainsChart = () => {
             </div>
 
 
-            <ResponsiveContainer width="90%" height={190} style={{ fontSize: '12px' }}>
+            <ResponsiveContainer width="100%" height={190} style={{ fontSize: '10px' }}>
                 <BarChart data={data} barGap={5} >
                     <CartesianGrid strokeDasharray="2 2" vertical={false} />
                     <XAxis dataKey="date" />

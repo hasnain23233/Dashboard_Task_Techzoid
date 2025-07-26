@@ -47,7 +47,7 @@ const UpcomingExpires = () => {
     return (
         <div className="p-4 rounded-xl shadow bg-white">
             <div className="flex justify-between  mb-4">
-                <h2 className="text-lg font-semibold">Upcoming Expires</h2>
+                <h2 className="lg:text-lg text-sm font-semibold">Upcoming Expires</h2>
                 <div className="flex items-end justify-end  flex-col s">
                     <span className="text-sm text-gray-500">Last 7 days</span>
 
@@ -58,18 +58,19 @@ const UpcomingExpires = () => {
             </div>
 
 
-            <ResponsiveContainer width="100%" height={185}>
+            <ResponsiveContainer width="100%" height={190} style={{ fontSize: '10px' }}>
                 <BarChart data={data} barGap={5}>
                     <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                    <XAxis dataKey="date" />
-                    <YAxis />
-                    <Tooltip />
+                    <XAxis dataKey="date" className='mr-12' />
+                    <YAxis className='border' />
+                    <Tooltip className='border' />
                     <Legend
                         onClick={handleLegendClick}
                         verticalAlign="bottom"
                         align="center"
                         height={20}
                         formatter={renderColorfulLegendText}
+
                     />
                     {(activeKey === 'all' || activeKey === 'domain') && (
                         <Bar dataKey="domain" fill="#FF6600" name="Domain" barSize={10} />
