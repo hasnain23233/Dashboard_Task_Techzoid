@@ -12,7 +12,7 @@ const FullMainDashboard = () => {
                 <div className='lg:w-2/12 smw-1/12 border h-full'>
                     <SideNabar />
                 </div>
-                <div className='w-10/12 overflow-auto'>
+                <div className='w-10/12 overflow-auto  main-scroll-container'>
                     <RoutingFiles />
                 </div>
             </div>
